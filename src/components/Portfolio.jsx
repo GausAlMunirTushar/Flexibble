@@ -1,9 +1,11 @@
 import portfolios from "../data/porfolio";
 import PortfolioCard from "./PortfolioCard";
+import Tabs from "./Tabs";
 
 const Portfolio = () => {
 	return (
 		<section className="w-7xl mx-auto px-8 py-10 ">
+			<Tabs />
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 				{portfolios.map((portfolio) => (
 					<PortfolioCard
