@@ -1,12 +1,10 @@
-import Header from "./components/Header";
-import Portfolio from "./components/Portfolio";
-import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import UserProfilePage from "./pages/UserProfilePage";
 function App() {
 	return (
 		<>
-			<Header />
-			<Portfolio />
-			<Footer />
+			<HomePage />
+			<UserProfilePage />
 		</>
 	);
 }
