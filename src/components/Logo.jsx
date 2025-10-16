@@ -1,5 +1,11 @@
+import { Link } from "react-router";
+
 const Logo = () => {
-	return <img src="../../public/logo/flexibble.svg" />;
+	return (
+		<Link to="/">
+			<img src="../../public/logo/flexibble.svg" />
+		</Link>
+	);
 };
 
 export default Logo;

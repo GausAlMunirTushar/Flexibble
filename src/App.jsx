@@ -1,12 +1,17 @@
-import HomePage from "./pages/HomePage";
+import { Routes, Route } from "react-router";
+import Header from "./components/Header";
 import LoginPage from "./pages/LoginPage";
-import UserProfilePage from "./pages/UserProfilePage";
+import HomePage from "./pages/HomePage";
 function App() {
 	return (
 		<>
-			{/* <HomePage />
-			<UserProfilePage /> */}
-			<LoginPage />
+			<Header />
+			<main className="">
+				<Routes>
+					<Route path="/" element={<HomePage />} />
+					<Route path="/login" element={<LoginPage />} />
+				</Routes>
+			</main>
 		</>
 	);
 }
